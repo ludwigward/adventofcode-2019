@@ -57,8 +57,21 @@ while reachedEnd == False:
 		step2 = path2[j]
 		stepSize1 = calcStepSize(step1)
 		stepSize2 = calcStepSize(step2)
-
 		
+
+		for k in range(1, stepSize1 + 1):
+		if step1[0] == "R":
+			pos_x1 += 1
+			grid[pos_y][pos_x] = "-"
+		elif step1[0] == "L":
+			pos_x -= 1
+			grid[pos_y][pos_x] = "-"
+		elif step[0] == "U":
+			pos_y -= 1
+			grid[pos_y][pos_x] = "|"
+		elif step[0] == "D":
+			pos_y += 1
+			grid[pos_y][pos_x] = "|"
 		
 
 
