@@ -47,19 +47,19 @@ def calculateOutput(noun, verb):
 
 foundMatch = False
 target = 19690720
-if True:
-	noun = -1
-	while noun <= 140 and foundMatch == False:
-		noun += 1
-		verb = 0
-		while verb <= 140:
-			recentOutput = calculateOutput(noun, verb)
-			if recentOutput == target:
-				foundMatch = True
-				print("Answer = ", noun*100 + verb)
-				break
-			else:
-				verb += 1
+
+noun = -1
+while noun <= 140 and foundMatch == False:
+	noun += 1
+	verb = 0
+	while verb <= 140:
+		recentOutput = calculateOutput(noun, verb)
+		if recentOutput == target:
+			foundMatch = True
+			print("Answer = ", noun*100 + verb)
+			break
+		else:
+			verb += 1
 		
 	
 	
